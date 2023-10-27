@@ -53,6 +53,9 @@
 .dropdown-content a:visited{
     color: white;
 }
+.dropdown-content a{
+    color: white;
+}
 .dropdown:hover .dropdown-content {
     display: block;
 }
