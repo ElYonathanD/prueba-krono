@@ -1,0 +1,81 @@
+
+.collections-invicta{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.title-collections-invicta{
+    text-align: center;
+    text-transform: uppercase;
+}
+.item-collection a img{
+    width: 100%;
+    max-width: 370px;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.name-collection{
+    margin: 0;
+    margin-top: -10px;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    border-bottom: 5px solid #FFEB00;
+}
+
+.item-collection:hover p{
+    color: black;
+    background-color: #FFEB00;
+    border-bottom: 5px solid black;
+}
+
+ .other-collections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.collection{
+    width: 100%;
+    max-width: 400px;
+}
+
+.collection p{
+   text-align: center;
+   text-transform: uppercase;
+   margin: 0;
+   color: white;
+   padding: 0.5rem 1rem;
+   background-color: rgb(0, 0, 0); 
+   border-bottom: 4px solid #FFEB00;
+}
+.collection:hover p{
+   color: rgb(0, 0, 0);
+   background-color: #FFEB00; 
+   border-bottom: 4px solid black;
+}
+
+.collection img{
+    width: 100%;
+    max-width: 400px;
+}
+
+@media screen and (max-width:300px){
+    .name-collection, .collection p{
+        font-size: 1rem;
+    }
+    .title-collections-invicta{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,38 @@
+.section-opinions{
+    margin: 0 auto;
+    width: 80%;
+}
+.section-opinions h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+.opinions{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 15px;
+}
+.opinion{
+    text-align: center;
+    width: 30%;
+    box-shadow: 2px 2px 10px #020202;
+    border-radius: 15px;
+}
+.opinion p{
+    font-size: 1rem;
+}
+.opinion .autor{
+    font-weight: bold;
+}
+@media screen and (max-width:700px) {
+    .opinions{
+        flex-direction: column;
+        align-items: center;
+    }
+    .opinion{
+        width: 80%;
+    }
+    .section-opinions h2{
+        font-size: 1.5rem;
+    }
+}

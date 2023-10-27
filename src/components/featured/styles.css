@@ -1,0 +1,71 @@
+.title-featured{
+    text-align: center;
+    border-bottom: 4px solid #FFEB00;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.container-featured{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 10px;
+}
+.item-featured a{
+    color: black;
+}
+.item-featured a:hover h2{
+    text-decoration: underline;
+}
+.item-featured{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+}
+.item-featured h2, .item-featured h3, .item-featured p{
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.img-item-featured{
+    width: 100%;
+}
+.item-featured h3{
+    margin: 0 10px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    width: fit-content;
+}
+.item-featured .price-before{
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.493);
+}
+.item-featured .price-now{
+    font-weight: bold;
+    color: red;
+}
+.btn-add-car{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+}
+.btn-add-car:hover{
+    cursor: pointer;
+    background-color: #FFEB00;
+    color: black;
+}
+
+@media screen and (max-width:300px){
+    .title-featured{
+        font-size: 1.5rem;
+    }
+}

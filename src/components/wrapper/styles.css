@@ -1,0 +1,48 @@
+@font-face {
+  font-family: pixel;
+  src: url(/src/assets/fonts/hanjet/Square-Dot-Matrix.ttf);
+}
+.container-announcement {
+  background: black;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.wrapper-announcement {
+  font-family: pixel;
+  font-size: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  white-space: nowrap;
+  animation: move 25s linear infinite;
+}
+.wrapper-item {
+  margin-left: 50px;
+  color: white;
+  list-style: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.wrapper-item:hover {
+  color: yellow;
+}
+.wrapper-announcement:hover {
+  animation-play-state: paused;
+}
+
+@keyframes move {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}

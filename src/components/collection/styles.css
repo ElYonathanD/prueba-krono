@@ -1,0 +1,59 @@
+.section-collection{
+    margin: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.img-collection{
+    width: 100%;
+    max-width: 360px;
+}
+.description h2{
+    width: fit-content;
+    text-transform: uppercase;
+    border-bottom: 4px solid #FFEB00;
+}
+.section-collection .description {
+    width: 50%;
+    font-size: 1.2rem;
+}
+.section-collection .description p{
+    text-align: justify;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+.section-collection .description p .invicta-bolt{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.btn-collection{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-bottom: 4px solid #FFEB00;
+    padding: 10px 50px;
+    
+}
+.btn-collection:hover{
+    cursor: pointer;
+    background-color: #FFEB00;
+    color: black;
+    border-bottom: 4px solid black;
+}
+
+@media screen and (max-width:756px){
+    .section-collection .description{
+        width: 80%;
+    }
+    .btn-collection{
+        font-size: 1rem;
+        width: 100%;
+    }
+}
